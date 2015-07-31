@@ -20,6 +20,7 @@
 		40C9ED7A1B6B6112003E7DC4 /* YNCallOutContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C9ED721B6B6112003E7DC4 /* YNCallOutContentView.m */; };
 		40C9ED7B1B6B6112003E7DC4 /* YNLocationAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C9ED741B6B6112003E7DC4 /* YNLocationAnnotation.m */; };
 		40C9ED7E1B6B617C003E7DC4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C9ED7D1B6B617C003E7DC4 /* CoreLocation.framework */; };
+		40C9ED801B6B69BA003E7DC4 /* annotation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40C9ED7F1B6B69BA003E7DC4 /* annotation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		40C9ED731B6B6112003E7DC4 /* YNLocationAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YNLocationAnnotation.h; sourceTree = "<group>"; };
 		40C9ED741B6B6112003E7DC4 /* YNLocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNLocationAnnotation.m; sourceTree = "<group>"; };
 		40C9ED7D1B6B617C003E7DC4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		40C9ED7F1B6B69BA003E7DC4 /* annotation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = annotation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		40C9ED6A1B6B6112003E7DC4 /* Callout view */ = {
 			isa = PBXGroup;
 			children = (
+				40C9ED7F1B6B69BA003E7DC4 /* annotation.gif */,
 				40C9ED6B1B6B6112003E7DC4 /* YNBaseAnnotation.h */,
 				40C9ED6C1B6B6112003E7DC4 /* YNBaseAnnotation.m */,
 				40C9ED6D1B6B6112003E7DC4 /* YNCallOutAnnotation.h */,
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40C9ED501B6B6093003E7DC4 /* Main.storyboard in Resources */,
+				40C9ED801B6B69BA003E7DC4 /* annotation.gif in Resources */,
 				40C9ED551B6B6093003E7DC4 /* LaunchScreen.xib in Resources */,
 				40C9ED521B6B6093003E7DC4 /* Images.xcassets in Resources */,
 			);
@@ -461,6 +465,7 @@
 				40C9ED661B6B6093003E7DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40C9ED671B6B6093003E7DC4 /* Build configuration list for PBXNativeTarget "CustomCalloutViewTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +474,7 @@
 				40C9ED691B6B6093003E7DC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
