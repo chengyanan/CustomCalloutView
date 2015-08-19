@@ -31,6 +31,20 @@
 			remoteGlobalIDString = 40C9ED401B6B6093003E7DC4;
 			remoteInfo = CustomCalloutView;
 		};
+		40FE6A5F1B843FFA006D52E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40FE6A5A1B843FF9006D52E6 /* SwiftVwesion.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40FE6A351B843FF9006D52E6;
+			remoteInfo = SwiftVwesion;
+		};
+		40FE6A611B843FFA006D52E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40FE6A5A1B843FF9006D52E6 /* SwiftVwesion.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40FE6A4A1B843FF9006D52E6;
+			remoteInfo = SwiftVwesionTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +73,7 @@
 		40C9ED741B6B6112003E7DC4 /* YNLocationAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNLocationAnnotation.m; sourceTree = "<group>"; };
 		40C9ED7D1B6B617C003E7DC4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		40C9ED7F1B6B69BA003E7DC4 /* annotation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = annotation.gif; sourceTree = "<group>"; };
+		40FE6A5A1B843FF9006D52E6 /* SwiftVwesion.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftVwesion.xcodeproj; path = SwiftVwesion/SwiftVwesion.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,7 @@
 		40C9ED381B6B6093003E7DC4 = {
 			isa = PBXGroup;
 			children = (
+				40FE6A5A1B843FF9006D52E6 /* SwiftVwesion.xcodeproj */,
 				40C9ED6A1B6B6112003E7DC4 /* Callout view */,
 				40C9ED431B6B6093003E7DC4 /* CustomCalloutView */,
 				40C9ED5D1B6B6093003E7DC4 /* CustomCalloutViewTests */,
@@ -160,6 +176,15 @@
 			path = "CustomCalloutView/Callout view";
 			sourceTree = "<group>";
 		};
+		40FE6A5B1B843FF9006D52E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40FE6A601B843FFA006D52E6 /* SwiftVwesion.app */,
+				40FE6A621B843FFA006D52E6 /* SwiftVwesionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +252,12 @@
 			mainGroup = 40C9ED381B6B6093003E7DC4;
 			productRefGroup = 40C9ED421B6B6093003E7DC4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40FE6A5B1B843FF9006D52E6 /* Products */;
+					ProjectRef = 40FE6A5A1B843FF9006D52E6 /* SwiftVwesion.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				40C9ED401B6B6093003E7DC4 /* CustomCalloutView */,
@@ -234,6 +265,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40FE6A601B843FFA006D52E6 /* SwiftVwesion.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwiftVwesion.app;
+			remoteRef = 40FE6A5F1B843FFA006D52E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40FE6A621B843FFA006D52E6 /* SwiftVwesionTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftVwesionTests.xctest;
+			remoteRef = 40FE6A611B843FFA006D52E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40C9ED3F1B6B6093003E7DC4 /* Resources */ = {
