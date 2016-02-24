@@ -43,7 +43,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     
     //MARK: - MKMapViewDelegate
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
         if annotation is YNBaseAnnotation {
             
@@ -86,11 +86,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
         if view.annotation is YNBaseAnnotation {
             
             self.isDeleteAnnotation = false
-            var baseAnnotation: YNBaseAnnotation = view.annotation as! YNBaseAnnotation
+//            let baseAnnotation: YNBaseAnnotation = view.annotation as! YNBaseAnnotation
             
             //TODO: 纪录 baseAnnotation.index
             
-            var callOutAnnotation = YNCallOutAnnotation(coordinate: view.annotation!.coordinate)
+            let callOutAnnotation = YNCallOutAnnotation(coordinate: view.annotation!.coordinate)
             mapView.addAnnotation(callOutAnnotation)
             self.callOutAnnotation = callOutAnnotation
         }
@@ -99,7 +99,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
         
-        if let tempCallOutAnnotation = self.callOutAnnotation {
+        if let _ = self.callOutAnnotation {
             
             self.isDeleteAnnotation = true
             
