@@ -43,7 +43,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
     
     
     //MARK: - MKMapViewDelegate
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView! {
         
         if annotation is YNBaseAnnotation {
             
@@ -81,7 +81,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         return nil
     }
     
-    func mapView(mapView: MKMapView!, didSelectAnnotationView view: MKAnnotationView!) {
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
         
         if view.annotation is YNBaseAnnotation {
             
@@ -90,14 +90,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
             
             //TODO: 纪录 baseAnnotation.index
             
-            var callOutAnnotation = YNCallOutAnnotation(coordinate: view.annotation.coordinate)
+            var callOutAnnotation = YNCallOutAnnotation(coordinate: view.annotation!.coordinate)
             mapView.addAnnotation(callOutAnnotation)
             self.callOutAnnotation = callOutAnnotation
         }
         
     }
     
-    func mapView(mapView: MKMapView!, didDeselectAnnotationView view: MKAnnotationView!) {
+    func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
         
         if let tempCallOutAnnotation = self.callOutAnnotation {
             
@@ -111,8 +111,14 @@ class ViewController: UIViewController, MKMapViewDelegate {
                     
                     if self.isDeleteAnnotation {
                         
-                        self.mapView.removeAnnotation(self.callOutAnnotation)
-                        self.callOutAnnotation = nil
+                        if let _ = self.callOutAnnotation {
+                        
+                            self.mapView.removeAnnotation(self.callOutAnnotation!)
+                            self.callOutAnnotation = nil
+                            
+                        }
+                        
+                        
                     }
                     
             })
@@ -126,11 +132,11 @@ class ViewController: UIViewController, MKMapViewDelegate {
     func addEnterpriseAnnotation() {
         
         let coordinate1: CLLocationCoordinate2D = CLLocationCoordinate2DMake(self.coordinate.latitude - 0.001, self.coordinate.longitude )
-        var baseAnnotation1: YNBaseAnnotation = YNBaseAnnotation(coordinate: coordinate1)
+        let baseAnnotation1: YNBaseAnnotation = YNBaseAnnotation(coordinate: coordinate1)
         baseAnnotation1.index = 1
         
         let coordinate2: CLLocationCoordinate2D = CLLocationCoordinate2DMake(self.coordinate.latitude + 0.001, self.coordinate.longitude )
-        var baseAnnotation2: YNBaseAnnotation = YNBaseAnnotation(coordinate: coordinate2)
+        let baseAnnotation2: YNBaseAnnotation = YNBaseAnnotation(coordinate: coordinate2)
         baseAnnotation2.index = 2
         
         self.mapView.addAnnotations([baseAnnotation1, baseAnnotation2])

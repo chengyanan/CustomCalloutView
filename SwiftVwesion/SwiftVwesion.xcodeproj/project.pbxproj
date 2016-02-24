@@ -176,6 +176,8 @@
 		40FE6A2D1B843FF9006D52E6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "农盟";
 				TargetAttributes = {
@@ -435,6 +437,7 @@
 				40FE6A561B843FF9006D52E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40FE6A571B843FF9006D52E6 /* Build configuration list for PBXNativeTarget "SwiftVwesionTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +446,7 @@
 				40FE6A591B843FF9006D52E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
